@@ -16,12 +16,36 @@
 <li><a href="Presentation.html">Presentation</a></li>
 <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
-       <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="POST"> 
-           <input type="text" name=""/>
-           <input type="submit" value="Submit"/>
+
+            
+       <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="POST">
+<fieldset>Namn: <input type="text" name="name" id="name" value="" />
+          Email: <input type="text" name="email" id="email" value="" /></fieldset>
+          <ul>
+              
+         <fieldset>
+        <legend>Hur glad är du?</legend>
+          <li><label for="Jätteglad">Jätteglad</label> <input type="checkbox" name="Jätteglad" id="Jätteglad" value="Jätteglad"></li>
+<li><label for="Glad">Glad</label> <input type="checkbox" name="Glad" id="Glad" value="Glad"></li>
+          <li><label for="Neutral">Neutral</label> <input type="checkbox" name="Neutral" id="Neutral" value="Neutral"></li>
+<li><label for="Ledsen">Ledsen</label> <input type="checkbox" name="Ledsen" id="Ledsen" value="Ledsen"></li>
+</ul></fieldset>
+<fieldset>
+            <legend>Ej obligatoriskt</legend>
+          <label for="Kön"></label>
+          <select name="Kön" id="Kön">
+          <option value="Kön">Välj Kön</option>
+          <option value="Man">Man</option>
+          <option value="Kvinna">Kvinna</option>
+          </select>
+          Kommentarer: <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+          
+           <input type="submit" value="Skicka"/>
+           </fieldset>
+           
        </form>
 
-  
+
  
   
   
